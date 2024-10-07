@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(237, 233, 233);
+  margin-top: 40px;
+  padding: 20px;
+}
+.right img {
+  height: 50px;
+}
+.right {
+  width: 300px;
+}
+.footer h3,
+p {
+  cursor: pointer;
+}
+.community{
+    display: flex;
+    font-size: 20px;
+    gap:10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media (max-width: 760px) {
+  .footcnt {
+    width: 250px;
+  }
+}
+@media (max-width: 660px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 370px) {
+  .footcnt {
+    width: 150px;
+  }
+  .right {
+    width: 170px;
+  }
+}

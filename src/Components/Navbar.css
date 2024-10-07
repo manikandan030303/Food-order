@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
+.menu-list ul li {
+  cursor: pointer;
+}
+.icons-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.icons-right img {
+  cursor: pointer;
+}
+.btn-log {
+  font-size: 16px;
+  background: transparent;
+  color: gray;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+.btn-log:hover {
+  background-color: rgb(239, 243, 243);
+}
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid tomato;
+}
+.basket-dot {
+  position: relative;
+}
+.basket-dot .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -3px;
+  right: -8px;
+}
+@media (max-width: 900px) {
+  .navbar .logonav {
+    width: 120px;
+  }
+  .menu-list {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .icons-right {
+    gap: 20px;
+  }
+  .icons-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .btn-log {
+    font-size: 15px;
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 700px) {
+  .menu-list {
+    display: none;
+  }
+}

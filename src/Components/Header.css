@@ -1,0 +1,72 @@
+.header {
+  height: 30vw;
+  margin: 30px auto;
+  background: url("C:\Users\mani0\OneDrive\Desktop\Projects\Foodie\foodii\src\Assets\bg.jpg");
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  position: relative;
+}
+.headercnt {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  position: absolute;
+  animation: fadein 3s;
+}
+.headercnt h1 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+.headercnt p {
+  color: white;
+  font-size: 1vw;
+}
+.headercnt button {
+  border: none;
+  color: gray;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 460px) {
+  .headercnt h1 {
+    font-weight: 500;
+    color: white;
+    font-size: max(2.5vw, 18px);
+    height: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .headercnt h1 {
+    font-weight: 500;
+    color: white;
+    font-size: max(2.5vw, 18px);
+    height: 50px;
+    width: 150px;
+  }
+}
+@media (max-width: 300px) {
+  .headercnt button {
+    border: none;
+    color: gray;
+    font-weight: 500;
+    padding: 0.5vw 1.3vw;
+    font-size: 14px;
+  }
+}
